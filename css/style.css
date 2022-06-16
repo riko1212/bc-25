@@ -108,8 +108,21 @@ button {
   padding-bottom: 32px;
 }
 
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
 .header-logo {
   margin-right: 70px;
+}
+.header-list {
+  display: flex;
+  align-items: center;
+}
+
+.header-item:not(:last-child) {
+  margin-right: 40px;
 }
 
 .header-link,
@@ -136,12 +149,19 @@ button {
 
 .header-btn {
   color: var(--first-btn-color);
+  margin-left: 40px;
+}
+.header-connect {
+  margin-left: auto;
 }
 
 /*-------------------- HERO------------------------ */
 
+.hero .container {
+  display: flex;
+}
 .hero-list {
-  width: 93px;
+  width: 90px;
 }
 
 .hero-link {
@@ -160,6 +180,7 @@ button {
 .hero-content {
   background-color: #303030;
   padding: 272px 0 206px 96px;
+  flex-grow: 1;
 }
 
 .hero-pre-title {
@@ -186,6 +207,20 @@ button {
 .about {
   padding-top: 140px;
   padding-bottom: 121px;
+}
+
+.about .container {
+  display: flex;
+}
+
+.about-item + .about-item {
+  margin-left: 30px;
+}
+
+.about-list {
+  display: flex;
+  flex-shrink: 0;
+  margin-right: 64px;
 }
 
 .about-pre-title {
@@ -232,12 +267,21 @@ button {
   margin-bottom: 44px;
 }
 
+.prices-wrap {
+  display: flex;
+  margin-bottom: 50px;
+}
+
 .prices-list {
   border: 1px solid #ffffff;
+  flex-grow: 1;
+  padding: 30px 40px;
 }
 
 .prices-item {
   margin-bottom: var(--typical-mb);
+  display: flex;
+  justify-content: space-between;
 }
 
 .prices-item:last-child {
@@ -253,6 +297,8 @@ button {
 
 .prices-btn {
   color: var(--first-btn-color);
+  display: block;
+  margin: 0 auto;
 }
 
 /*-------------------- REASONS------------------------ */
@@ -260,6 +306,20 @@ button {
 .reasons {
   padding-top: 114px;
   padding-bottom: 137px;
+}
+
+.reasons-list {
+  width: 370px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.reasons-item:nth-child(odd) {
+  margin-right: 30px;
+}
+
+.reasons-item:nth-child(even) {
+  margin-top: 30px;
 }
 
 .reasons-item {
@@ -308,6 +368,16 @@ button {
   margin-bottom: var(--typical-mb);
 }
 
+.masters-list {
+  display: flex;
+  margin-left: -30px;
+}
+
+.masters-item {
+  width: calc(100% / 3 - 30px);
+  margin-left: 30px;
+}
+
 .masters-title {
   color: var(--second-title-color);
   margin-bottom: 44px;
@@ -344,6 +414,20 @@ button {
 .gallery-pre-title {
   color: #303030;
   margin-bottom: 44px;
+}
+
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  /* margin: -15px; */
+  gap: 30px;
+}
+
+.gallery-item {
+  width: calc((100% - 90px) / 4);
+  /* flex-basis: calc(100% / 4 - 30px);
+  flex-basis: calc((100% - 120px) / 4);
+  margin: 15px; */
 }
 
 .contact-wrap {
