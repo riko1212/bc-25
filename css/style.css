@@ -72,6 +72,15 @@ button {
   line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+.pre-title::before {
+  content: "";
+  width: 63px;
+  height: 1px;
+  background: currentColor;
+  margin-right: 21px;
 }
 
 .section-title {
@@ -115,6 +124,10 @@ button {
 
 .header-logo {
   margin-right: 70px;
+}
+
+.logo-icon {
+  fill: #303030;
 }
 .header-list {
   display: flex;
@@ -179,6 +192,15 @@ button {
 
 .hero-content {
   background-color: #303030;
+  background-image: linear-gradient(
+      rgba(25, 28, 38, 0.2),
+      rgba(25, 28, 38, 0.2)
+    ),
+    url(../img/hero-bg.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
   padding: 272px 0 206px 96px;
   flex-grow: 1;
 }
@@ -195,6 +217,20 @@ button {
   letter-spacing: 0.05em;
   color: var(--first-title-color);
   margin-bottom: var(--typical-mb);
+  display: flex;
+  align-items: baseline;
+}
+
+.hero-title::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  margin-right: 10px;
+}
+
+.hero-title::after {
+  content: "!";
 }
 
 .hero-after-title {
@@ -273,15 +309,44 @@ button {
 }
 
 .prices-list {
-  border: 1px solid #ffffff;
   flex-grow: 1;
   padding: 30px 40px;
+}
+
+.prices-list:first-child {
+  background-image: linear-gradient(
+    180deg,
+    #171a24 0%,
+    rgba(23, 26, 36, 0.2) 100%
+  );
+}
+.prices-list:last-child {
+  background-image: linear-gradient(
+    180deg,
+    #090b13 0%,
+    rgba(9, 11, 19, 0.2) 100%
+  );
 }
 
 .prices-item {
   margin-bottom: var(--typical-mb);
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
+}
+
+.prices-item::after {
+  content: "";
+  width: 100px;
+  height: 1px;
+  background-color: rgba(157, 164, 189, 0.12);
+  flex-grow: 1;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+.prices-item-text:last-child {
+  order: 1;
 }
 
 .prices-item:last-child {
@@ -362,6 +427,7 @@ button {
 .masters {
   padding-top: 130px;
   padding-bottom: 130px;
+  background-color: #f7f7f7;
 }
 .masters-pre-title {
   color: #303030;
@@ -403,7 +469,46 @@ button {
   text-align: center;
   letter-spacing: 0.02em;
   color: #ff6c00;
+  margin-bottom: 30px;
 }
+
+.masters-soc-list {
+  display: flex;
+  justify-content: center;
+}
+
+.masters-soc-item + .masters-soc-item {
+  margin-left: 10px;
+}
+
+.masters-soc-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: teal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.masters-soc-icon {
+  fill: currentColor;
+}
+
+.masters-soc-link:hover,
+.masters-soc-link:focus {
+  background-color: tomato;
+  color: teal;
+}
+
+/* .masters-soc-link:hover, .masters-soc-link:focus {
+  background-color: tomato;
+}
+
+.masters-soc-link:hover .masters-soc-icon, .masters-soc-link:focus .masters-soc-icon {
+  fill: teal;
+} */
 
 /*-------------------- GALLERY------------------------ */
 
