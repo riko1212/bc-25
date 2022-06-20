@@ -48,7 +48,9 @@
           <a href="tel:+380441111111" class="header-tel link"
             >+38 044 111 11 11</a
           >
-          <button type="button" class="header-btn btn">онлайн-запись</button>
+          <button type="button" class="header-btn btn" data-modal-open>
+            онлайн-запись
+          </button>
         </div>
       </div>
     </header>
@@ -212,12 +214,21 @@
           <h2 class="masters-title section-title">Наши мастера</h2>
           <ul class="masters-list list">
             <li class="masters-item">
-              <img
-                src="./img/masters-img-1.jpeg"
-                alt="барбер стрижет клиента"
-                width="370"
-                height="346"
-              />
+              <div class="masters-top-wrap">
+                <img
+                  src="./img/masters-img-1.jpeg"
+                  alt="барбер стрижет клиента"
+                  width="370"
+                  height="346"
+                />
+                <p class="masters-top-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Tenetur perspiciatis repellat perferendis, soluta ipsam
+                  mollitia praesentium, facilis maiores voluptatibus, quaerat
+                  labore cupiditate eum autem ullam quibusdam aut illum?
+                </p>
+              </div>
+
               <div class="masters-item-wrap">
                 <h3 lang="en" class="masters-item-title">John Smith</h3>
                 <p lang="en" class="masters-item-text">Extreme Barber</p>
@@ -383,5 +394,13 @@
         </ul>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+          X
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
