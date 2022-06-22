@@ -358,6 +358,28 @@
         <div class="container">
           <section class="online">
             <h2 class="section-title online-title">Онлайн-запись</h2>
+            <form class="online-form">
+              <input
+                type="text"
+                class="online-input"
+                name="online-name"
+                required
+                placeholder="Имя*"
+              />
+              <input
+                type="tel"
+                class="online-input"
+                name="online-tel"
+                required
+                placeholder="Телефон*"
+              />
+              <textarea
+                name="online-mess"
+                class="online-mess"
+                placeholder="сообщение"
+              ></textarea>
+              <button type="submit" class="btn online-btn">отправить</button>
+            </form>
           </section>
           <section class="contacts">
             <h2 class="section-title contacts-title">Контакты</h2>
@@ -416,6 +438,71 @@
         <button type="button" class="modal-close-btn" data-modal-close>
           X
         </button>
+        <p class="modal-title">Заголовок модального вікна</p>
+        <form>
+          <label class="modal-label"
+            >Ваше імя
+            <input
+              type="text"
+              class="modal-input"
+              name="user-name"
+              placeholder="Микола"
+              required
+            />
+          </label>
+          <div class="modal-field">
+            <label for="user-tel" class="modal-label">Ваш телефон</label>
+            <div class="input-wrap">
+              <input
+                type="tel"
+                class="modal-input"
+                name="user-tel"
+                placeholder="+380 (96) 111-11-11"
+                required
+                minlength="10"
+                title="+380 (96) 111-11-11"
+                id="user-tel"
+              />
+              <svg class="input-icon" width="18" height="18">
+                <use href="./img/symbol-defs.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+          <input
+            type="email"
+            class="modal-input"
+            name="user-mail"
+            placeholder="test@mail.ua"
+          />
+          <div class="modal-field">
+            <label for="user-text" class="modal-label">Ваш комент</label>
+            <textarea
+              name="user-text"
+              id="user-text"
+              class="modal-comment"
+              placeholder="комент"
+            ></textarea>
+          </div>
+          <div class="modal-field">
+            <input
+              type="checkbox"
+              name="privacy"
+              class="modal-check visually-hidden"
+              value="true"
+              id="user-check"
+            />
+            <label for="user-check" class="check-text">
+              <span>
+                <svg class="check-icon" width="11" height="8">
+                  <use href="./img/symbol-defs.svg#icon-check"></use>
+                </svg>
+              </span>
+              Політика користування</label
+            >
+          </div>
+
+          <button type="submit">Send</button>
+        </form>
       </div>
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -425,3 +512,5 @@
     </script>
   </body>
 </html>
+
+user-name=Name &user-tel=%28096%29111-11-11& user-mail=tdewdew
