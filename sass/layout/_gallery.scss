@@ -1,0 +1,22 @@
+.gallery {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+.gallery-pre-title {
+  color: #303030;
+  margin-bottom: 44px;
+}
+
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  /* margin: -15px; */
+  gap: 30px;
+}
+
+.gallery-item {
+  width: calc((100% - 90px) / 4);
+  /* flex-basis: calc(100% / 4 - 30px);
+  flex-basis: calc((100% - 120px) / 4);
+  margin: 15px; */
+}
