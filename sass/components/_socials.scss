@@ -16,16 +16,15 @@
   align-items: center;
   justify-content: center;
   color: #ffffff;
+  &:hover,
+  &:focus {
+    background-color: tomato;
+    color: teal;
+  }
 }
 
 .socials__icon {
   fill: currentColor;
-}
-
-.socials__link:hover,
-.socials__link:focus {
-  background-color: tomato;
-  color: teal;
 }
 
 /* .masters-soc-link:hover, .masters-soc-link:focus {

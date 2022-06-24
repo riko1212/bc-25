@@ -32,13 +32,12 @@
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.1em;
-  color: var(--header-color);
+  color: $header-color;
   transition: color 300ms linear;
-}
-
-.navigation__link:hover,
-.navigation__link:active {
-  color: var(--accent-color);
+  &:hover,
+  &:active {
+    color: var(--accent-color);
+  }
 }
 
 /* .header-tel {

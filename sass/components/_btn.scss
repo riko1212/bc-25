@@ -11,17 +11,16 @@
   min-width: 160px;
   height: 40px;
   transition: background-color 300ms linear, color 300ms linear;
-}
+  &:hover {
+    background-color: var(--accent-color);
+    color: var(--first-btn-color);
+  }
 
-.btn:hover {
-  background-color: var(--accent-color);
-  color: var(--first-btn-color);
-}
+  &--light {
+    color: var(--first-btn-color);
+  }
 
-.btn--light {
-  color: var(--first-btn-color);
-}
-
-.btn--dark {
-  color: var(--second-btn-color);
+  &--dark {
+    color: var(--second-btn-color);
+  }
 }
